@@ -4,7 +4,7 @@
 #
 Name     : R-permute
 Version  : 0.9.5
-Release  : 15
+Release  : 16
 URL      : https://cran.r-project.org/src/contrib/permute_0.9-5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/permute_0.9-5.tar.gz
 Summary  : Functions for Generating Restricted Permutations of Data
@@ -25,10 +25,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552406241
+export SOURCE_DATE_EPOCH=1552780554
 
 %install
-export SOURCE_DATE_EPOCH=1552406241
+export SOURCE_DATE_EPOCH=1552780554
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -64,8 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library permute|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  permute || :
 
 
 %files
@@ -100,3 +99,18 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/permute/help/permute.rdx
 /usr/lib64/R/library/permute/html/00Index.html
 /usr/lib64/R/library/permute/html/R.css
+/usr/lib64/R/library/permute/tests/Examples/permute-Ex.Rout.save
+/usr/lib64/R/library/permute/tests/testthat.R
+/usr/lib64/R/library/permute/tests/testthat/test-allPerms.R
+/usr/lib64/R/library/permute/tests/testthat/test-as-methods.R
+/usr/lib64/R/library/permute/tests/testthat/test-blocks.R
+/usr/lib64/R/library/permute/tests/testthat/test-check.R
+/usr/lib64/R/library/permute/tests/testthat/test-get-methods.R
+/usr/lib64/R/library/permute/tests/testthat/test-how.R
+/usr/lib64/R/library/permute/tests/testthat/test-nobs.R
+/usr/lib64/R/library/permute/tests/testthat/test-numPerms.R
+/usr/lib64/R/library/permute/tests/testthat/test-permute-fun.R
+/usr/lib64/R/library/permute/tests/testthat/test-set-methods.R
+/usr/lib64/R/library/permute/tests/testthat/test-shuffle-utils.R
+/usr/lib64/R/library/permute/tests/testthat/test-shuffle.R
+/usr/lib64/R/library/permute/tests/testthat/test-shuffleSet.R
