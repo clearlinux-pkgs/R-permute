@@ -1,3 +1,5 @@
 # This file contains recursive sources that require this package
+R-adegenet
 R-bipartite
+R-mirt
 R-vegan
