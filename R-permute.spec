@@ -4,7 +4,7 @@
 #
 Name     : R-permute
 Version  : 0.9.7
-Release  : 42
+Release  : 43
 URL      : https://cran.r-project.org/src/contrib/permute_0.9-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/permute_0.9-7.tar.gz
 Summary  : Functions for Generating Restricted Permutations of Data
